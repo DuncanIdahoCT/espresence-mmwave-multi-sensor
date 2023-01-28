@@ -50,7 +50,8 @@ I chose a nice looking black plastic electronics project box that was cheap and 
 
 ![starting out](images/espresence-mmwave-multi-sensor-internals.jpg)
 
-The first connections I made were for the BME280 (Press/Humid/Temp) sensor which wasn't too hard, basically you chose pins on the ESP32 for the I2C bus, one being clock and other data (on the BME280 side it's SCK and SD1) and then wire it up! sounds easy right??? I realized the code sample I used wasn't for the BME280 but Rather some other environment sensor that looks similar but operates on another address but after a little bit I figured this out and my sensor started to come alive!
+What isn't clear from the image above is how I stacked up the BME280>BH1750>PIR which is for several reasons, lack of space, wanting the Illuminance sensor pad to be as close to the edge of the (transparent) PIR dome as possible so it will get a bit of light and also that the PIR dome needed to be a bit raised off the project board inside the case in order to be able to poke outside the finished enclosure. Soldering the PIR dome was the trickiest part as it's pins aren't the same as header pins, they're tiny and short and I didn't have the right kind of header, or whatever it's called for that so I just soldered on some cut header pins and "extended" the PIR pins... ugly but worked.
 
-![first connections](images/first%20connections.jpg)
+The stack:
+![first connections](images/bme280+bh1750-stack.jpg)
 
