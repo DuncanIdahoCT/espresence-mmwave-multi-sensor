@@ -55,9 +55,11 @@ Just like the Everything Presence One, my DIY version has an mmWave sensor, a PI
    captive_portal:
    ```
 
-* Now click edit on your new sensor in ESPHome and you'll see the basic code:
-
-
+* The esisest way to proceed is to copy all the code above out to notepad++ or your favorite editor and then paste back in the entire code from:
+   ```
+   espresence-multi-sensor.yaml
+   ```
+* The esisest way to proceed is to copy all the code above out to notepad++ or your favorite editor and then paste back in the entire code from:
 
    ```
    substitutions:
