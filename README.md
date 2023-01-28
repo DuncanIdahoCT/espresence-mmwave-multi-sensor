@@ -5,6 +5,8 @@ My DIY project to build a multi sensor based on the EP1
 
 Just like the Everything Presence One, my DIY version has an mmWave sensor, a PIR motion sensor, light illuminance, and a combo temperature/humidity sensor. Similarly it's added into Home Assistant by using the ESPHome add-on.
 
+While the code file: espresence-multi-sensor.yaml basically gives you all the connection and pinout info needed bring this project to life... some assemnbly notes and images can be found here [here](https://github.com/DuncanIdahoCT/espresence-mmwave-multi-sensor/blob/be24037999fa7bd67ba5f9ab0a86b6d48541aabd/static/project.md)!
+
 ### Installation:
  * Download these files and copy them (keeping their subfolder paths) into your Home Assistant config/esphome main folder:
 
