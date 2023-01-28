@@ -95,3 +95,7 @@ While the code file: espresence-multi-sensor.yaml basically gives you all the co
       password: "${wifi_password}"
       use_address: XXX.XXX.XXX.XXX
    ```
+# Comments are welcome
+
+This is my first GitHub repo/project so I appologize if it's a bit chaotic.
+
