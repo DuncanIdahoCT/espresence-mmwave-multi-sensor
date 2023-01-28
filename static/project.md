@@ -65,6 +65,12 @@ I quickly realized that placement is key. I ended up moving up onto a wall and a
 
 The reason for this is that the PIR is great for fast motion detection and to control automatic lighting but not so great at staying in its lane ;) meaning if it sees something, even through the doorway, down the hall in another room's open door, my office lights will come on. Then promptly go back off again because of how I have my automations in HA setup to not allow lights to stay on without a human presence. So... placement! I put it where it could see the entire office space but not out into the hall and this way when someone enters the room, the PIR triggers the lights on, but then the mmWave keeps them on using its vastly superior millimeter wave motion detection. You might ask, why not just use the mmWave sensor for automatic on lights, well that works well, in fact a little too well! The mmWave will trigger on the tiniest movement such as a cat or a waving drapery or hanging decorations swayiing with natural air convection. The PIR only picks up large movement so it's perfect for human entry triggers but then pretty terrible for ongoing human presence detection.
 
+# What My Automation Looks Like in HA Node-RED
+
+![Wall Placement](images/wall%20placement.jpg)
+
+
+* Use good wire! The wires you see in my project box are just cut lengths of the pile of breadboard wires I had with the cheap project kit I got online... never again! These wires are just awful to try to silver, and solder won't flow correctly as you're trying to jumper from pin to pin. For another project, I stripped an all copper power wire I had laying around and used these and it was so beautiful I almost cried as I remembered how annoying these were to work with.
 
 # Things I learned
 
