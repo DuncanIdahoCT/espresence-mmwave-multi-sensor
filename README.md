@@ -8,9 +8,9 @@ Just like the Everything Presence One, my DIY version has an mmWave sensor, a PI
 ### Installation:
  * Download these files and copy them (keeping their subfolder paths) into your Home Assistant config/esphome main folder:
    
-     header/leapmmw_sensor.h
+      header/leapmmw_sensor.h
      
-     packages/leapmmw_sensor.yml
+      packages/leapmmw_sensor.yml
   
  * In the ESPHome add-on, click new device and opt to continue, give your new project a name
    ```
