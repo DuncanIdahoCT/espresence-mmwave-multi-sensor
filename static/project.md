@@ -1,10 +1,14 @@
 
 # Project Start
 
-
 I had some fun and also some frustrations along the way with this project-starting very simple with the breadboard, I realized that a single breadboard, at least the ones I was used to working with, was not wide enough so I had to connect a pair of them together and have the ESP straddle the both of them in order to gain access to both sides of the ESP32 pin headers for breadboard wiring:
 
 ![starting out](images/breadboard-beginnings.jpg)
+
+# Adopt/Install/or otherwise... Get Your ESP into ESPHome
+
+Now that my ESP32 had pins and wasn't dangling on the end of a hanging USB cable, I did the install of the code, this isn't too dificult and there are many guides and several ways to do this using ESPHome either inside HA as an add-on, or by installing the tools on your PC. You may need to install a com port driver which is available on the esphome.io website my pc alread had these drivers as I had used some other random USB-COM port device and many of them share the same chipset.
+
 
 The first connections I made were for the BME280 (Press/Humid/Temp) sensor which wasn't too hard, basically you chose pins on the ESP32 for the I2C bus, one being clock and other data (on the BME280 side it's SCK and SD1) and then wire it up! sounds easy right??? I realized the code sample I used wasn't for the BME280 but Rather some other environment sensor that looks similar but operates on another address but after a little bit I figured this out and my sensor started to come alive!
 
@@ -36,7 +40,7 @@ It should look something like this:
 
 # Adding to Home Assistant
 
-This is actually pretty strai
+This is actually pretty straight forward. In Home Assistant, go to settings>devices and click add integration and search for esphome. You can enter the ip of the unit here and click submit, and you'll be prompted for the encryption key along with a location selector. That's about it. You'll see it listed in devices on the ESPHome card and also you'll then be able to see the device and all entities and use the states for automations or add to the dashboard.
 
 
 
