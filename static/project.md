@@ -55,3 +55,7 @@ What isn't clear from the image above is how I stacked up the BME280>BH1750>PIR 
 The stack:
 ![first connections](images/bme280+bh1750-stack.jpg)
 
+# Things I learned
+
+Use good wire! The wires you see in my proeject box are just cut lengths of the pile of breadboard wires I had with the cheap project kit I got online... never again! these wires are just awful to try to silver and solder won't flow correctly as you're trying to jumper from pin to pin. For another project, I stripped an all copper power wire I had laying around and used these and it was so beautiful I almost cried as I remembered how annoying this little f__kers were to work with. Get the correct header for the PIR dome... no idea what it's called but I've seen it. The PIR dome from panasonic and others like it use these tiny short pins that are really not easy to work with and are meant to plug into something you solder down to your project board.
+
