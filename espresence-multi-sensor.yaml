@@ -22,6 +22,9 @@ substitutions:
   illuminance_multiplier: "10"
 
 # include the yml file with the sensor configuration
+packages:
+  inclusions: !include packages/leapmmw_sensor.yml
+
 i2c:
   sda: 26
   scl: 25
@@ -46,9 +49,6 @@ sensor:
       multiply: ${illuminance_multiplier}
     address: 0x23
     update_interval: 30s
-
-packages:
-  inclusions: !include packages/leapmmw_sensor.yml
 
 binary_sensor:
   - platform: gpio
