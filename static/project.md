@@ -67,7 +67,7 @@ The reason for this is that the PIR is great for fast motion detection and to co
 
 # What My Automation Looks Like in HA Node-RED
 
-![HA Node-RED Automation](images/lighting%20automation.jpg)
+![HA Node-RED Automation](images/lighting%20automation.png)
 
 
 * Use good wire! The wires you see in my project box are just cut lengths of the pile of breadboard wires I had with the cheap project kit I got online... never again! These wires are just awful to try to silver, and solder won't flow correctly as you're trying to jumper from pin to pin. For another project, I stripped an all copper power wire I had laying around and used these and it was so beautiful I almost cried as I remembered how annoying these were to work with.
