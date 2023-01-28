@@ -1,5 +1,5 @@
 
-# Hardware Overview
+# Project Start
 
 
 I had some fun and also some frustrations along the way with this project-starting very simple with the breadboard, I realized that a single breadboard, at least the ones I was used to working with, was not wide enough so I had to connect a pair of them together and have the ESP straddle the both of them in order to gain access to both sides of the ESP32 pin headers for breadboard wiring:
@@ -19,3 +19,16 @@ Note: The pins for the PIR and mmWave are commented in the full config yaml file
 Once my BH1750 (illuminance) sensor arrived I found a spot for it on the now very busy looking breadboard and wired it up. Since I2C is a parallel bus, at least that's what I call it, the pins are just joined together with the BME280. On the BH1750 those pins are SCL (clock) and SDA (data) and the code I found already had the correct I2C address and descriptor for the BH1750 so it came right up :)
 
 ![Finished Prototype](images/finished%20prototype.jpg)
+
+
+# Building this all into an electronics project box!
+
+
+I had some fun and also some frustrations along the way with this project-starting very simple with the breadboard, I realized that a single breadboard, at least the ones I was used to working with, was not wide enough so I had to connect a pair of them together and have the ESP straddle the both of them in order to gain access to both sides of the ESP32 pin headers for breadboard wiring:
+
+![starting out](images/breadboard-beginnings.jpg)
+
+The first connections I made were for the BME280 (Press/Humid/Temp) sensor which wasn't too hard, basically you chose pins on the ESP32 for the I2C bus, one being clock and other data (on the BME280 side it's SCK and SD1) and then wire it up! sounds easy right??? I realized the code sample I used wasn't for the BME280 but Rather some other environment sensor that looks similar but operates on another address but after a little bit I figured this out and my sensor started to come alive!
+
+![first connections](images/first%20connections.jpg)
+
