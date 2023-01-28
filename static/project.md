@@ -21,6 +21,25 @@ Once my BH1750 (illuminance) sensor arrived I found a spot for it on the now ver
 ![Finished Prototype](images/finished%20prototype.jpg)
 
 
+# Using your sensors built-in website for initial testing
+
+Unless disabled, the ESP modules have a built-in webserver which is quite handy even without Home Assistant or ESPHome add-on to be able to diagnose or fine tune the settings:
+
+Just open up a browser and pop in the ip of your device
+http://your-sensor-ip
+It should look something like this:
+
+![Finished Prototype](images/esp32-webserver.jpg)
+
+
+# Adding to Home Assistant
+
+This is actually pretty strai
+
+
+
+
+
 # Building this all into an electronics project box!
 
 
