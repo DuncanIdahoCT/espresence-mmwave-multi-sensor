@@ -97,5 +97,5 @@ While the code file: espresence-multi-sensor.yaml basically gives you all the co
    ```
 # Comments are welcome
 
-This is my first GitHub repo/project so I appologize if it's a bit chaotic.
+This is my first GitHub repo/project so I apologize if it's a bit chaotic.
 
