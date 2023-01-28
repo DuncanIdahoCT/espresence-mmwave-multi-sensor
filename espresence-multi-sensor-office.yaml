@@ -1,8 +1,8 @@
 substitutions:
   # change device name to match your desired name
-  device_name: espresence-multi-sensor-office
+  device_name: espresence-mmwave-multi-sensor
   # change sensor name below to the one you want to see in Home Assistant
-  device_name_pretty: Office Multi Presence Occupancy Sensor
+  device_name_pretty: Multi Presence Occupancy Sensor
   # change room name below to the one you want to see in Home Assistant
   room: "Office"
   # change the below to be your WiFi SSID
@@ -86,16 +86,16 @@ esp32:
 # Enable Home Assistant API
 api:
   encryption:
-    key: "+XYSmZwwO33ELblhWSX3q3p0J660w3VTJPxZCouyks0="
+    key: "assigned_when_you_add_to_esphome"
 
 ota:
-  password: "c5839844dfc4722b9da60fa293f300c0"
+  password: "assigned_when_you_add_to_esphome"
 
 # Connect to WiFi & create captive portal and web server
 wifi:
   ssid: "${ssid}"
   password: "${wifi_password}"
-  use_address: 192.168.1.40
+  use_address: XXX.XXX.XXX.XXX
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
@@ -103,11 +103,11 @@ wifi:
     password: "${wifi_password}"
   #manual_ip:
     # Set this to the IP of the ESP
-    #static_ip: 192.168.1.227
+    #static_ip: XXX.XXX.XXX.XXX
     # Set this to the IP address of the router. Often ends with .1
-    #gateway: 192.168.1.254
+    #gateway: XXX.XXX.XXX.XXX
     # The subnet of the network. 255.255.255.0 works for most home networks.
-    #subnet: 255.255.255.0
+    #subnet: XXX.XXX.XXX.XXX
     
 captive_portal:
 
