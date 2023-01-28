@@ -71,3 +71,25 @@ Just like the Everything Presence One, my DIY version has an mmWave sensor, a PI
       room: "Office"
    ```
 * The room: "name" is key as it will be the name of each sensor object in HA so if you chose "Office" here, you sensors will be Office Motion, Office Tempurature, etc...
+
+* You'll also want to copy the generated api encryption key and ota password into this section of the full code:
+
+   ```
+   # Enable Home Assistant API
+   api:
+      encryption:
+         key: "assigned_when_you_add_to_esphome"
+
+   ota:
+      password: "assigned_when_you_add_to_esphome"
+   ```
+
+* Lastly, in the wifi: section, there is a line that says "use_address: XXX.XXX.XXX.XXX" this is an optional element to workaround typical issues with mDNS and wifi/subnets. Basically if you find your device is always showing as offline in ESPHome or has any issues at all when making changes or updating OTA, you'll want this setting. Note: this is not a static IP, it just tells ESPHome to use an IP address to do all OTA work with a given ESP device. You can of course set a static IP but this isn't that.
+
+   ```
+   # Connect to WiFi & create captive portal and web server
+   wifi:
+      ssid: "${ssid}"
+      password: "${wifi_password}"
+      use_address: XXX.XXX.XXX.XXX
+   ```
