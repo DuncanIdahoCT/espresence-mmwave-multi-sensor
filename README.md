@@ -6,7 +6,9 @@ My DIY project to build a multi sensor based on the EP1
 Just like the Everything Presence One, my DIY version has an mmWave sensor, a PIR motion sensor, light illuminance, and a combo temperature/humidity sensor. Similarly it's added into Home Assistant by using the ESPHome add-on.
 
 ### Installation:
- * Download the header/leapmmw_sensor.h and packages/leapmmw_sensor.yml include files into your Home Assistant config/esphome path and keep the subfolders or you'll      need to change the include references.
+ * Download these files and copy them (keeping their subfolder paths) into your Home Assistant config/esphome main folder:
+ *    header/leapmmw_sensor.h
+ *    packages/leapmmw_sensor.yml
  * Include the following in the YAML configuration for your ESP board:
    ```
    substitutions:
