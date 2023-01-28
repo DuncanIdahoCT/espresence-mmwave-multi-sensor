@@ -8,4 +8,4 @@ I had some fun and also some frustrations along the way with this project-starti
 
 The first connections I made were for the BME280 (Press/Humid/Temp) sensor which wasn't too hard, basically you chose pins on the ESP32 for the I2C bus, one being clock and other data and then wire it up! sounds easy right??? I realized the code sample I used wasn't for the BME280 but Rather some other environment sensor that looks similar but operates on another address but after a little bit I figured this out and my sensor started to come alive!
 
-![starting out](images/first_connections.jpg)
+![first connections](images/first%20connections.jpg)
