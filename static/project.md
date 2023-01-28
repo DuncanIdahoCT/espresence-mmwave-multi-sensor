@@ -3,7 +3,7 @@
 
 I had some fun and also some frustrations along the way with this project-starting very simple with the breadboard, I realized that a single breadboard, at least the ones I was used to working with, was not wide enough so I had to connect a pair of them together and have the ESP straddle the both of them in order to gain access to both sides of the ESP32 pin headers for breadboard wiring:
 
-![starting out](images/breadboard-beginnings.jpg)
+![Breadboard Beginnings](images/breadboard-beginnings.jpg)
 
 # Adopt/Install/or otherwise... Get Your ESP into ESPHome
 
@@ -13,7 +13,7 @@ Now that my ESP32 had pins and wasn't dangling on the end of a hanging USB cable
 
 The first connections I made were for the BME280 (Press/Humid/Temp) sensor which wasn't too hard, basically you chose pins on the ESP32 for the I2C bus, one being clock and other data (on the BME280 side it's SCK and SD1) and then wire it up! sounds easy right??? I realized the code sample I used wasn't for the BME280 but Rather some other environment sensor that looks similar but operates on another address but after a little bit I figured this out and my sensor started to come alive!
 
-![first connections](images/first%20connections.jpg)
+![First Connections](images/first%20connections.jpg)
 
 The order of my progress was very much determined by the United States Postal Service ;) so next I added in the mmWave and the PIR dome. The mmWave wasn't too hard, I soldered the header onto the mmWave and popped it onto the breadboard... why not stacked you might asked? that would make sense right?? after all the mmWave header pins align perfectly with the ESP32 (Wemos D1 mini) pins... well, again, these components arrived over time and I didn't think about the end results so I had already soldered the headers onto the ESP32 "wrong" for stacking... besides, as a breadboard project, it looks cooler this way right!?
 
@@ -26,7 +26,7 @@ Once my BH1750 (illuminance) sensor arrived I found a spot for it on the now ver
 ![Finished Prototype](images/finished%20prototype.jpg)
 
 
-# Using your sensors built-in website for initial testing
+# Using your ESP32 built-in website for initial testing
 
 Unless disabled, the ESP modules have a built-in webserver which is quite handy even without Home Assistant or ESPHome add-on to be able to diagnose or fine tune the settings:
 
@@ -36,7 +36,7 @@ http://your-sensor-ip
 
 It should look something like this:
 
-![Finished Prototype](images/esp32-webserver.png)
+![ESP32 Webserver](images/esp32-webserver.png)
 
 
 # Adding to Home Assistant
@@ -44,15 +44,11 @@ It should look something like this:
 This is actually pretty straight forward. In Home Assistant, go to settings>devices and click add integration and search for esphome. You can enter the ip of the unit here and click submit, and you'll be prompted for the encryption key along with a location selector. That's about it. You'll see it listed in devices on the ESPHome card and also you'll then be able to see the device and all entities and use the states for automations or add to the dashboard.
 
 
-
-
-
 # Building this all into an electronics project box!
 
+I chose a nice looking black plastic electronics project box that was cheap and also had a project board inside that I could use to assemble the components. There are some inherent issues with the box I've chosen such as not much light being able to reach the illuminance sensor and even with the holes I drilled in the top/bottom plates, there isn't a lot of aif flow to the temp and humidity sensors but it works and some offsets and multipliers are provided in the code to compensate for these issues... mostly.
 
-I had some fun and also some frustrations along the way with this project-starting very simple with the breadboard, I realized that a single breadboard, at least the ones I was used to working with, was not wide enough so I had to connect a pair of them together and have the ESP straddle the both of them in order to gain access to both sides of the ESP32 pin headers for breadboard wiring:
-
-![starting out](images/breadboard-beginnings.jpg)
+![starting out](images/espresence-mmwave-multi-sensor-internals.jpg)
 
 The first connections I made were for the BME280 (Press/Humid/Temp) sensor which wasn't too hard, basically you chose pins on the ESP32 for the I2C bus, one being clock and other data (on the BME280 side it's SCK and SD1) and then wire it up! sounds easy right??? I realized the code sample I used wasn't for the BME280 but Rather some other environment sensor that looks similar but operates on another address but after a little bit I figured this out and my sensor started to come alive!
 
