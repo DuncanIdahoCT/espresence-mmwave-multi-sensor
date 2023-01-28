@@ -59,29 +59,15 @@ Just like the Everything Presence One, my DIY version has an mmWave sensor, a PI
    ```
    espresence-multi-sensor.yaml
    ```
-* The esisest way to proceed is to copy all the code above out to notepad++ or your favorite editor and then paste back in the entire code from:
+* Now just copy some key lines you saved from your new basic config and paste them into the relevant sections of the full config:
 
    ```
    substitutions:
-     device_name: leapmmw
- 
-     # This will vary based on your board
-     uart_tx_pin: TX
-     
-     # This will vary based on your board
-     uart_rx_pin: RX
-     
-     # This will vary based on your board
-     gpio_pin: D0
-     
-     # (Optional) Path to the leapmmw_sensor.h file relative to your esphome configuration directory.
-     # header_file: leapmmw_sensor.h
-   
-   packages:
-     remote_package:
-       url: https://github.com/hjmcnew/esphome-hs2xx3a-custom-component
-       ref: release
-       files: [packages/uart.yml, packages/leapmmw_sensor.yml]
-       # For additional debugging replace the above line with:
-       # files: [packages/uart_debug.yml, packages/leapmmw_sensor.yml]
+      # change device name to match your desired name
+      device_name: espresence-mmwave-multi-sensor
+      # change sensor name below to the one you want to see in Home Assistant
+      device_name_pretty: Multi Presence Occupancy Sensor
+      # change room name below to the one you want to see in Home Assistant
+      room: "Office"
    ```
+* The room: "name" is key as it will be the name of each sensor object in HA so if you chose "Office" here, you sensors will be Office Motion, Office Tempurature, etc...
